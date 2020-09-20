@@ -1,0 +1,25 @@
+@import "src/styles/variables";
+
+.todo-element {
+  &__container {
+    width: 100%;
+    overflow: hidden;
+    .MuiListItem-container {
+      &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+        background-color: map-get($colors, lightGray);
+      }
+    }
+    .MuiListItemIcon-root {
+      padding-left: 14px;
+      min-width: auto;
+      margin-right: 5px;
+    }
+    .MuiTypography-root {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: pre-wrap;
+    }
+  }
+}

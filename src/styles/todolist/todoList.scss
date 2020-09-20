@@ -1,0 +1,30 @@
+@import "src/styles/variables";
+
+.todo-list {
+  &__container {
+    background-color: whitesmoke;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 0 rgba(0,0,0,0.75);
+    width: 60%;
+    height: fit-content;
+    padding: 20px 10px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-gap: 30px;
+  }
+
+  &__header {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: map-get($breakpoints, xxs)) {
+  .todo-list {
+
+    &__container {
+      width: 100%;
+    }
+
+  }
+}
+
